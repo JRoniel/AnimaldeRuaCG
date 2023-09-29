@@ -1,0 +1,226 @@
+/* Configuração Root */
+:root {
+    --white-color: #fff;
+    --dark-color: #333;
+    --primary-color: #ffd600;
+    --primary-background: #ffd600;
+    --secondary-background: #f1f1f1;
+    --dark-background: #333;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-background);
+}
+
+/* Estilos para o topo */
+.topper {
+    width: 100%;
+    float: left;
+    background-color: var(--primary-background);
+    clear: left;
+}
+
+.topper a {
+    text-decoration: none;
+    color: var(--dark-color);
+    padding: 0 0.8rem;
+}
+
+/* Estilos para o fullcard com botão de doação */
+.fullcard img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Estilo da div de contêiner das imagens */
+.container {
+  clear: both;
+    display: flex;
+    width: 100%;
+}
+
+/* Estilo para as imagens quadradas */
+.square-image {
+    flex: 1;
+    transition: transform 0.1s ease;
+    max-width: 33.33333%;
+    height: auto;
+}
+
+/* Efeito de desfoque quando a classe "blurred" está presente */
+.square-image.blurred {
+    filter: blur(5px);
+}
+
+/* Efeito de zoom quando a classe "zoomed" está presente */
+.square-image.zoomed {
+    z-index: 999;
+    border: 2px solid #fff;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Estilo para área de apresentação */
+/* Estilo da div com duas colunas */
+.two-column-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  padding: 0 7px;
+}
+
+.hello {
+    text-align: left;
+    color: var(--dark-color);
+}
+
+/* Estilo das colunas */
+.column {
+    flex: 1;
+    padding: 10px 10px;
+}
+
+/* Estilo para o contêiner do vídeo */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção de aspecto 16:9 (ajuste conforme necessário) */
+    overflow: hidden;
+  
+  
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  border: 0;
+}
+
+/* Layout para telas menores (usando uma media query) */
+@media (max-width: 768px) {
+    .two-column-container {
+      display: block;
+        flex-direction: column;
+    }
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: var(--white-color);
+    overflow: hidden;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: var(--dark-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+    background-color: var(--dark-background);
+}
+
+/* Estilos para o menu de hambúrguer */
+.icon-bar {
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 15px;
+}
+
+.icon-bar div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-background);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Estilos para o menu de navegação móvel */
+.navbar.responsive {
+    position: relative;
+}
+
+.navbar.responsive .icon-bar {
+    display: block;
+}
+
+.navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+/* Estilos para o ícone do menu de navegação */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 15px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-background);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Media query para ativar o menu de hambúrguer em telas menores */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .navbar a {
+        float: none;
+        text-align: left;
+        display: none;
+    }
+    .navbar.responsive {
+        display: block;
+    }
+}
+
+
+/* Animação do ícone de hambúrguer */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Media query para ativar o menu de hambúrguer em telas menores */
+@media screen and (max-width: 768px) {
+    .icon-bar {
+        display: block;
+    }
+    .navbar a {
+        float: none;
+        text-align: left;
+        display: none;
+    }
+    .navbar.responsive {
+        display: block;
+    }
+}
