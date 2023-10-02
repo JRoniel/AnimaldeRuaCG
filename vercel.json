@@ -2,20 +2,6 @@
   "name": "Animal de Rua CG",
   "version": 1,
   "cleanUrls": true,
-  "headers": [
-    {
-      "key": "X-Content-Type-Options",
-      "value": "nosniff"
-    },
-    {
-      "key": "X-Frame-Options",
-      "value": "DENY"
-    },
-    {
-      "key": "X-XSS-Protection",
-      "value": "1; mode=block"
-    }
-  ],
   "routes": [
     {
       "handle": "filesystem"
@@ -25,15 +11,23 @@
       "dest": "/404.html"
     },
     {
-      "src": "/*",
-      "dest": "/404.html"
-    },
-    {
       "src": "/:path*",
       "headers": [
         {
           "key": "x-authorized",
           "value": "true"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
         }
       ],
       "conditions": [
