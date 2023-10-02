@@ -1,17 +1,23 @@
 # Site Animal de Rua CG
 - Hospedagem> VERCEL
 - Dominio> SEM_DOMINIO
-- by John Roniel de Rodolfo Tolke
+- by John Roniel de Rodolfo Tolke 
 
-  <br>
+<br>
 
  ### Logs por pagina:
  
 `Home Page`:
-- Navbar adicionada
-- FullCard com botão de ação (doar) adicionado
-- Sessão de apresentação adicionada
+- [x] Topper e navbar adicionada
+- [x] FullCard com botão de ação (doar) adicionado
+- [x] Sessão de apresentação adicionada
+- [ ] Footer
 
-`Correções/adições nescessárias`:
-- Responsividade nos links de navegção (/voluntarios /apoie /adote)
-- Página de erro 404
+`Pagina 404`:
+- [x] Pagina concluída
+
+`Infraestrutura`:
+- [ ] Politica de controle de cache
+- [x] Urls amigáveis
+- [x] Segurança contra XSS adicionada
+- [x] Redirecionamentos internos (Página 404)
