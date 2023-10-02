@@ -2,7 +2,6 @@
   "name": "Animal de Rua CG",
   "version": 1,
   "cleanUrls": true,
-  "source": "/(.*)",
   "headers": [
     {
       "key": "X-Content-Type-Options",
@@ -30,7 +29,7 @@
       "dest": "/404.html"
     },
     {
-      "source": "/:path*",
+      "src": "/:path*",
       "headers": [
         {
           "key": "x-authorized",
