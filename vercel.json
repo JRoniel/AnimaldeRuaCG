@@ -29,13 +29,6 @@
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
         }
-      ],
-      "conditions": [
-        {
-          "type": "query",
-          "key": "authorized",
-          "value": "true"
-        }
       ]
     }
   ]
