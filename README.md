@@ -10,14 +10,21 @@
 `Home Page`:
 - [x] Topper e navbar adicionada
 - [x] FullCard com botão de ação (doar) adicionado
+- [x] Square imagens com ação 
 - [x] Sessão de apresentação adicionada
 - [ ] Footer
 
 `Pagina 404`:
 - [x] Pagina concluída
+- [ ] Adicionar navbar atualizada
+
+`Pagina política de privacidade `:
+- [x] Página concluída
+- [ ] Adicionar navbar atualizada
 
 `Infraestrutura`:
-- [ ] Politica de controle de cache
-- [x] Urls amigáveis
-- [x] Segurança contra XSS adicionada
-- [x] Redirecionamentos internos (Página 404)
+- [ ] Otimização de dados em cache
+- [x] Política de privacidade 
+- [ ] Urls amigáveis
+- [ ] Segurança contra XSS adicionada
+- [ ] Redirecionamentos internos (Página 404)
