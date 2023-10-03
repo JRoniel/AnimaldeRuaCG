@@ -89,12 +89,28 @@ body {
     float: left;
     background-color: var(--primary-background);
     clear: left;
+    height: 0.9rem;
 }
 
 .topper a {
+    font-size: 13.33333px;
     text-decoration: none;
     color: var(--dark-color);
-    padding: 0 0.8rem;
+    padding: 10px 0.8rem;
+}
+
+/* Estilos para a logo */
+.logo {
+    width: 100px; /* Defina a largura desejada para a logo */
+    height: auto;
+    display: block;
+    float: left;
+    margin: 7px 0.8rem;
+    opacity: 1;
+}
+
+.logo.hide {
+  display: none;
 }
 
 /* Estilos para o fullcard com botão de doação */
@@ -187,6 +203,9 @@ body {
 .navbar {
     background-color: var(--white-color);
     overflow: hidden;
+    display: flex; /* Use flexbox para alinhar os elementos na linha */
+    justify-content: space-between; /* Coloque a logo à esquerda e o ícone do menu à direita */
+    align-items: center; /* Alinhe verticalmente os elementos no centro */
 }
 
 .navbar a {
@@ -263,22 +282,28 @@ body {
     .navbar.responsive {
         display: block;
     }
+    
+    /* Estilo para a logo quando o menu hambúrguer está ativo */
+    .change .logo {
+        opacity: 0; /* Faça a logo desaparecer */
+        pointer-events: none; /* Desative os eventos de clique na logo */
+    }
 }
 
 
 /* Animação do ícone de hambúrguer */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-    transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-5px, -6px);
-    transform: rotate(45deg) translate(-5px, -6px);
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* Media query para ativar o menu de hambúrguer em telas menores */

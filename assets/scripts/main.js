@@ -1,10 +1,13 @@
-// Função para tornar o menu responsivo
 function activeMenu() {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {
         x.className += " responsive";
+        // Adicione a classe 'hide' para esconder a logo quando o menu está aberto
+        document.querySelector(".logo").classList.add("hide");
     } else {
         x.className = "navbar";
+        // Remova a classe 'hide' para mostrar a logo quando o menu é recolhido
+        document.querySelector(".logo").classList.remove("hide");
     }
     // Adicionar classe 'change' para animar o ícone de hambúrguer
     var iconBar = document.querySelector(".icon-bar");
