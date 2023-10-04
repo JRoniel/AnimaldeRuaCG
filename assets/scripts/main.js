@@ -1,3 +1,7 @@
+document.querySelector(".logo").addEventListener("click", ()=> {
+  window.location.href="..,index.html"
+});
+
 function activeMenu() {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {

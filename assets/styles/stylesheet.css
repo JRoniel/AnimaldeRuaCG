@@ -4,7 +4,7 @@
     --dark-color: #333;
     --black-color: #000;
     --primary-color: #ffd600;
-    --secondary-color: #f1f1f1;
+    --secondary-color: #fff;
 }
 
 body {
@@ -21,13 +21,26 @@ body {
 .bg-secondary {
     background-color: var(--secondary-color);
 }
+.bg-dark {
+background-color: var(--dark-color);
+}
 
 /* Estilo da div de contêiner */
 .container {
     clear: both;
       display: flex;
       width: 100%;
+      padding: 0;
+      margin: 0;
   }
+
+.separator {
+  width: 0;
+  height: 0;
+  background-color: #fff;
+  border-left: 100vw solid transparent;
+  border-bottom: 11.9vw solid var(--primary-color);
+}
 
 /* Cookie de consentimento */
 .cookieConsentContainer {
@@ -281,12 +294,34 @@ body {
 
 .hello {
     text-align: left;
-    font-size: 110%;
     color: var(--dark-color);
 }
 
-.hello h1 {
-  font-size: 150%;
+.hello {
+  text-align: left;
+}
+
+.btn {
+  float: right;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Georgia;
+  color: var(--primary-color);
+  font-size: 20px;
+  background: var(--dark-color);
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+    z-index: 1; /* Defina um valor de z-index para controlar a sobreposição */
+}
+
+.btn:hover {
+  background: var(--primary-color);
+  text-decoration: none;
 }
 
 /* Estilo das colunas */
@@ -319,4 +354,16 @@ body {
       display: block;
         flex-direction: column;
     }
+    
+}
+.parceiros {
+  margin: auto;
+  text-align: center;
+  font-size: 130%;
+}
+
+.parceiros img {
+  background-color: red;
+  width: 28vw;
+  height: 28vw;
 }
