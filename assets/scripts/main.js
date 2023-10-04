@@ -33,7 +33,7 @@ function toggleZoom(image) {
 // Configuração para exibição do aviso de cookies
 let cookieConfig = {
     title: "Aviso de Cookies 🍪",
-    description: "Este site utiliza cookies para garantir que você obtenha a melhor experiência possível. Os cookies são pequenos arquivos de texto que são armazenados em seu dispositivo para ajudar a melhorar a funcionalidade e o desempenho do site. Ao continuar a navegar neste site, você concorda com o uso de cookies. Para mais informações sobre como usamos cookies e como você pode controlá-los, consulte nossa Política de Privacidade e Cookies.",
+    description: "Este site utiliza cookies para garantir que você obtenha a melhor experiência possível. Ao continuar a navegar neste site, você concorda com o uso de cookies. Para mais informações consulte nossa Política de Privacidade e Cookies.",
     link: '<a href="/pages/privacy-policy.html" target="_blank">Para que serve?</a>',
     button: "Entendi 👍"
 };

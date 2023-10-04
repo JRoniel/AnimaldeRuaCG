@@ -16,11 +16,11 @@
 
 `Pagina 404`:
 - [x] Pagina concluída
-- [ ] Adicionar navbar atualizada
+- [x] Adicionar navbar atualizada
 
 `Pagina política de privacidade `:
 - [x] Página concluída
-- [ ] Adicionar navbar atualizada
+- [x] Adicionar navbar atualizada
 
 `Infraestrutura`:
 - [ ] Otimização de dados em cache
