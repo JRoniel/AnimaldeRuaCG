@@ -11,30 +11,48 @@ class Main {
     constructor() {
         this.initEvents();
         this.cookieConsent();
+        this.correctYear();
     }
 
-    initEvents = () => {
+    initEvents() {
         document.querySelector(".logo").addEventListener("click", () => {
             window.location.href = domain;
         });
-        // Event Listeners aqui
     }
+    
+    openFullscreen(element) {
+  const imageSrc = element.src;
+  document.getElementById('fullscreen-img').src = imageSrc;
+  document.getElementById('fullscreen').style.display = 'block';
+}
+
+
+ closeFullscreen() {
+    document.getElementById('fullscreen').style.display = 'none';
+}
+
 
     activeMenu() {
-        var x = document.getElementById("myNavbar");
+        const x = document.getElementById("myNavbar");
+        const logo = document.querySelector(".logo");
+        const iconBar = document.querySelector(".icon-bar");
+
         if (x.className === "navbar") {
             x.className += " responsive";
-            // Adicione a classe 'hide' para esconder a logo quando o menu está aberto
-            document.querySelector(".logo").classList.add("hide");
+            logo.classList.add("hide");
         } else {
             x.className = "navbar";
-            // Remova a classe 'hide' para mostrar a logo quando o menu é recolhido
-            document.querySelector(".logo").classList.remove("hide");
+            logo.classList.remove("hide");
         }
-        // Adicionar classe 'change' para animar o ícone de hambúrguer
-        var iconBar = document.querySelector(".icon-bar");
+
         iconBar.classList.toggle("change");
     }
+    
+    correctYear(){
+      document.getElementById("year").innerText = new Date().getFullYear();
+    }
+
+    // Restante do seu código aqui...
 
     fadeIn(element, display) {
         var el = document.getElementById(element);
@@ -89,7 +107,7 @@ class Main {
         return null;
     }
 
-    cookieConsent = () => {
+    cookieConsent() {
         if (!this.getCookie("purecookieDismiss")) {
             document.body.innerHTML +=
                 '<div id="cookieConsentContainer" class="cookieConsentContainer">' +
@@ -101,11 +119,10 @@ class Main {
         }
     }
 
-    purecookieDismiss = () => {
+    purecookieDismiss() {
         this.setCookie("purecookieDismiss", "1", 7);
         this.fadeOut("cookieConsentContainer");
     }
-
 }
 
-const mainInstance = new Main();
+const main = new Main();

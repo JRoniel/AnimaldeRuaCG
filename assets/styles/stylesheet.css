@@ -1,3 +1,4 @@
+
 /* Configuração Root */
 :root {
     --white-color: #fff;
@@ -25,6 +26,10 @@ body {
 background-color: var(--dark-color);
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* Estilo da div de contêiner */
 .container {
     clear: both;
@@ -34,12 +39,74 @@ background-color: var(--dark-color);
       margin: 0;
   }
 
-.separator {
+.container-block {
+  display: block;
+  clear: both;
+}
+
+.title {
+  font-size: 150%;
+  padding: 5px 0 10px 0;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 110%;
+  padding: 0 1rem;
+}
+
+.t-white {
+  color: #fff;
+}
+
+.t-primary {
+  color: var(--primary-color);
+}
+
+.t-dark {
+  color: #333;
+}
+
+.separator-primary {
   width: 0;
   height: 0;
-  background-color: #fff;
-  border-left: 100vw solid transparent;
-  border-bottom: 11.9vw solid var(--primary-color);
+  padding: 0;
+  border: 0;
+  background-color: var(--secondary-color);
+  border-right: 100vw solid transparent;
+  border-bottom: 2.2rem solid var(--primary-color);
+}
+
+.separator-secondary {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+  background-color: var(--primary-color);
+  border-right: 100vw solid transparent;
+  border-bottom: 2.2rem solid var(--secondary-color);
+
+}
+
+.separator-dark {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+  background-color: var(--primary-color);
+  border-right: 100vw solid transparent;
+  border-bottom: 2.2rem solid var(--dark-color);
+
+}
+
+.separator-dark-inverso {
+  width: 0;
+  height: 0;
+  padding: 0;
+  background-color: var(--dark-color);
+  border-right: 100vw solid transparent;
+  border-bottom: 2.2rem solid var(--secondary-color);
+ border: 0;
 }
 
 /* Cookie de consentimento */
@@ -130,7 +197,7 @@ background-color: var(--dark-color);
 
 /* Estilos para a logo */
 .logo {
-    width: 100px; /* Defina a largura desejada para a logo */
+    width: 80px; /* Defina a largura desejada para a logo */
     height: auto;
     display: block;
     float: left;
@@ -146,10 +213,15 @@ background-color: var(--dark-color);
 .navbar {
     background-color: var(--white-color);
     overflow: hidden;
-    display: flex; /* Use flexbox para alinhar os elementos na linha */
+    display: block; /* Use flexbox para alinhar os elementos na linha */
     justify-content: space-between; /* Coloque a logo à esquerda e o ícone do menu à direita */
     align-items: center; /* Alinhe verticalmente os elementos no centro */
     padding: 0 0.9rem;
+}
+
+.navbar .logo,
+.navbar  {
+    align-self: center;
 }
 
 .navbar a {
@@ -157,6 +229,7 @@ background-color: var(--dark-color);
     display: block;
     color: var(--dark-color);
     text-align: center;
+    font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -254,6 +327,7 @@ background-color: var(--dark-color);
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+
 /* Estilos para o fullcard com botão de doação */
 .fullcard img {
     width: 100%;
@@ -346,6 +420,7 @@ background-color: var(--dark-color);
     width: 100%;
     height: 100%;
   border: 0;
+  z-index: 1;
 }
 
 /* Layout para telas menores (usando uma media query) */
@@ -360,10 +435,114 @@ background-color: var(--dark-color);
   margin: auto;
   text-align: center;
   font-size: 130%;
+  padding: 15px 0;
 }
 
 .parceiros img {
-  background-color: red;
-  width: 28vw;
-  height: 28vw;
+  border-radius: 50%;
+  border: 1px solid var(--dark-color);
+  width: 18vw;
+  height: auto;
+}
+
+.conheca {
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  display: block; /* Use flexbox para alinhar os elementos na linha */
+    justify-content: space-between; /* Coloque a logo à esquerda e o ícone do menu à direita */
+    align-items: center; /* Alinhe verticalmente os elementos no centro */
+}
+
+.circle-photo {
+  padding: 0 2.9px;
+    width: 29.33333%; /* Ajuste o tamanho da sua foto */
+    height: auto; /* Ajuste o tamanho da sua foto */
+    overflow: hidden;
+    border-radius: 50%; /* Isso tornará a foto redonda */
+}
+
+.spotted {
+  color: #fff;
+  font-weight: bold;
+text-shadow: 1.6px 1.6px 1px #333;
+}
+
+.casos {
+  padding: 15px 0;
+}
+
+.caso-photo {
+  border-radius: 50%;
+  height: auto;
+  width: 18vw;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.footer {
+  padding: 10px 0 0 0;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+
+.footer-column img {
+  width: 150px;
+  height: auto;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.hotbar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+} 
+
+
+/* Estilos para a visualização em fullscreen */
+#fullscreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    z-index: 2;
+}
+
+#fullscreen img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }

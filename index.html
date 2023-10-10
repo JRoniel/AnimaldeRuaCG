@@ -6,23 +6,27 @@
     <title>Associação Animal de Rua Campina Grande</title>
 
     <!-- METATAGS SEO -->
-
     <meta name="keywords" content="ONG de Proteção Animal, Campina Grande, Animais de Rua, Adoção de Animais, Cães e Gatos Abandonados, Resgate de Animais, Bem-Estar Animal, Voluntariado Animal, Doações para Animais, Apoio a Animais Desamparados, Associação Animal Campina Grande, Ativismo Animal, Ajuda a Animais Necessitados, Campanhas de Adoção, Protetores de Animais em Campina Grande.">
     <meta name="language" content="Português">
     <meta name="robots" content="index, follow">
     <meta property="description" content="A Associação Animal de Rua Campina Grande é uma ONG dedicada a fazer a diferença na vida dos animais abandonados e necessitados na cidade de Campina Grande e regiões vizinhas. Operando em colaboração com outros protetores e voluntários dedicados, nossa organização se esforça para fornecer atendimento e assistência vital para cães e gatos desamparados.">
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/JRoniel/AnimaldeRuaCG/master/icon.ico">
     <link rel="canonical" href="index.html">
-    <meta property="og:title" content="Associação Animal de Rua Campina Grande, ONG na Paraiba">
+    <meta property="og:title" content="Associação Animal de Rua Campina Grande, ONG na Paraíba">
     <meta property="og:description" content="A Associação Animal de Rua Campina Grande é uma ONG dedicada a fazer a diferença na vida dos animais abandonados e necessitados na cidade de Campina Grande e regiões vizinhas. Operando em colaboração com outros protetores e voluntários dedicados, nossa organização se esforça para fornecer atendimento e assistência vital para cães e gatos desamparados.">
     <meta property="og:image" content="https://raw.githubusercontent.com/JRoniel/AnimaldeRuaCG/master/icon.ico">
-    <meta property="og:url" content="https://animalderuacg.vercel.app/"> <!-- Precisa ser atualizado se o dominio for mudado -->
+    <meta property="og:url" content="https://animalderuacg.vercel.app/"> <!-- Precisa ser atualizado se o domínio for mudado -->
 
     <link rel="stylesheet" href="./assets/styles/reset.css"> 
     <link rel="stylesheet" href="./assets/styles/stylesheet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap">
 </head>
 <body>
+  
+  <div id="fullscreen">
+        <img id="fullscreen-img" src="" alt="Imagem em Tela Cheia">
+        <span class="close" onclick="main.closeFullscreen()">&times;</span>
+    </div>
 
 <!-- Topper com contatos -->
 <div class="topper">
@@ -34,14 +38,13 @@
 
 <!-- Cabeçalho (Header) com o menu de navegação -->
 <div class="navbar" id="myNavbar">
-  
-  <img src="./assets/images/logo.webp" class="logo" alt="Logo da sua empresa">
+    <img src="./assets/images/logo.webp" class="logo" alt="Logo da sua empresa" loading="lazy">
    
-  <div class="icon-bar" onclick="activeMenu()">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-  </div>
+    <div class="icon-bar" onclick="main.activeMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
   
     <a href="/apoie.html">Apoie</a>
     <a href="/voluntarios">Voluntariado</a>
@@ -49,49 +52,117 @@
     <a href="#">Formulários</a>
     <a href="#">Contato</a>
     <a href="/adote">Adote</a>
-    
 </div>
 
 <!-- FullCard com botão de doar -->
 <div class="fullcard">
-  <a href="apoie.html">
-    <img src="./assets/images/fullcard.webp">
-  </a>
+    <a href="apoie.html">
+        <img src="./assets/images/fullcard.webp" alt="imagem alfredo com botão doar" loading="lazy">
+    </a>
 </div>
-  
-  <!--- Square de imagens com ações -->
+ 
+<!-- Square de imagens com ações -->
 <div class="container" style="padding-bottom: 1rem;">
-  <img src="./assets/images/square01.webp" class="square-image" onclick="toggleZoom(this)">
-  <img src="./assets/images/square02.webp" class="square-image" onclick="toggleZoom(this)">
-  <img src="./assets/images/square03.webp" class="square-image" onclick="toggleZoom(this)">
+    <img src="./assets/images/square01.webp" class="square-image" alt="square imagem" loading="lazy">
+    <img src="./assets/images/square02.webp" class="square-image" alt="square imagem" loading="lazy" >
+    <img src="./assets/images/square03.webp" class="square-image" alt="square image" loading="lazy">
 </div>
 
-  <!--- Apresentação da ONG --->
-  <div class="two-column-container bg-secondary">
-        <div class="column">
-          <div class="image-container">
+<!-- Apresentação da ONG -->
+<div class="two-column-container bg-secondary">
+    <div class="column">
+        <h1 style="text-shadow: 0.8px 0.8px 0.8px #333;" class="title t-primary">Um pouco sobre</h1>
+        <p class="text t-dark">Ah, isso aqui é um texto foda e impactante para um caralho, é um texto muito forte falando sobre os serviços da ong e como trabalhamos para a ajudar os animais e protetores independentes.</p>
+        <p class="text t-dark">Ah, isso aqui é um texto foda e impactante para um caralho, é um texto muito forte falando sobre os serviços da ong e como trabalhamos para a ajudar os animais e protetores independentes.</p>
+    </div>
+    <div class="column">
+        <div class="image-container">
+            <img src="./assets/images/volutarios.webp" alt="foto dos voluntários" onclick="main.openFullscreen(this)" loading="lazy">
+        </div>  
+    </div>
+</div>
 
-  <img src="../assets/images/presetation.webp">
+<div class="separator-primary"></div>
+
+<div class="container-block conheca left">
+    <h1 class="title t-dark text-center">Conheça nosso trabalho</h1>
+    <p class="text t-dark text-center">Ah, isso aqui é um texto foda e impactante para um caralho, é um texto muito forte falando sobre os serviços da ong e como trabalhamos para a ajudar os animais e protetores independentes.</p>
     
-              </div>
+    <div class="two-column-container bg-primary">
+        <div class="column spotted left">
+            <ol>Hoje temos:
+                <li>00 animais loucos</li>
+                <li>00 voluntários na causa</li>
+                <li>+000 animais adotados</li>
+                <li>+000 casos atendidos</li>
+            </ol>
         </div>
-        <div class="column">
-          <div class="image-container">
-            <img src="./assets/images/volutarios.webp" alt="foto dos voluntarios">
-          </div>  
+      
+        <div class="column right">
+            <img class="circle-photo right" src="./assets/images/caramelo.webp" alt="Foto 3" loading="lazy" onclick="main.openFullscreen(this)">
+            <img class="circle-photo right" src="./assets/images/docinho.webp" alt="Foto 3" loading="lazy" onclick="main.openFullscreen(this)">
+            <img class="circle-photo right" src="./assets/images/voluntarios.webp" alt="Foto 3" loading="lazy" onclick="main.openFullscreen(this)">
+        </div>
+    </div>
+</div>
+
+<div class="container separator-dark"></div>
+
+<div class="container-block casos t-white text-center bg-dark">
+    <h1 class="title">Casos mais marcantes</h1>
+    <p class="text">A seguir alguns de nossos casos com maior comoção e mais marcantes para a ONG, descrição de caso e como está hoje.</p>
+    
+    <div class="two-columns-container container">
+        <div class="column left bg-dark">
+            <p class="text">Caso x antes/depois</p>
+             <small class="t-primary">clique para abrir</small>
+            <img src="" alt="foto antes" loading="lazy">
+            <img src="" alt="foto depois" loading="lazy">
+        </div>
+        
+        <div class="column right bg-dark">
+            <p class="text">Caso bruce antes/depois</p>
+            <small class="t-primary">clique para abrir</small>
+            <img class="caso-photo" src="./assets/images/bruce-before.png" alt="foto antes" loading="lazy" onclick="main.openFullscreen(this)">
+            <img class="caso-photo" src="./assets/images/bruce-after.png" alt="foto depois" loading="lazy" onclick="main.openFullscreen(this)">
         </div>
     </div>
     
-    <div class="separator"></div>
-  
-  <div class="container bg-primary">
+    <p class="text">A seguir alguns de nossos casos com maior comoção e mais marcantes para a ONG, descrição de caso e como está hoje.</p>
+</div>
+
+<div class="container separator-dark-inverso"></div>
+
+<div class="container bg-secondary">
     <div class="parceiros">
-      <h1>Conheça nossos parceiros</h1>
-      <img src="./assets/images/malufarma.png">
-      <img src="./assets/images/malufarma.png">
-      <img src="./assets/images/malufarma.png">
+        <h1 class="text-dark">Conheça nossos parceiros</h1>
+        <img src="../assets/images/centrovetcg.webp" alt="square imagem" loading="lazy">
+        <img src="../assets/images/malupetfarma.webp" alt="square imagem" loading="lazy">
+        <img src="../assets/images/civet.webp" alt="square imagem" loading="lazy">
+        <p>Agradecemos a todos os apoiadores ❤️</p>
     </div>
-  </div>
+</div>
+
+<footer class="container bg-dark">
+    <div class="two-columns-container container">
+        <div class="column t-white footer-column">
+            <p>Links úteis:</p>
+            <a href="#">Transparência</a>
+            <a href="#">Centro de Zoonozes CG</a>
+            <a href="#">link util 3</a>
+            <a href="#">link util 4</a>
+        </div>
+        
+        <div class="column footer-column">
+            <img src="./assets/images/logo.webp" alt="logo animal de rua" loading="lazy">
+            <p class="t-white">Associação Animal de Rua Campina Grande <span id="year">%YEAR%</span> Todos os direitos reservados ©</p>
+        </div>
+    </div>
+</footer>
+
+<div class="hotbar">
+    <p>Por Rodolfo Tolke & John Roniel</p>
+</div>
 
 <!-- Incluir o arquivo JavaScript -->
 <script src="./assets/scripts/main.js"></script>
