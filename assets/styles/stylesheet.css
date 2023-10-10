@@ -1,29 +1,29 @@
-
 /* Configuração Root */
 :root {
-    --white-color: #fff;
-    --dark-color: #333;
-    --black-color: #000;
-    --primary-color: #ffd600;
-    --secondary-color: #fff;
+  --white-color: #fff;
+  --dark-color: #333;
+  --black-color: #000;
+  --primary-color: #ffd600;
+  --secondary-color: #fff;
 }
 
 body {
   font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
 }
 
 .bg-primary {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .bg-secondary {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
+
 .bg-dark {
-background-color: var(--dark-color);
+  background-color: var(--dark-color);
 }
 
 .text-center {
@@ -32,12 +32,12 @@ background-color: var(--dark-color);
 
 /* Estilo da div de contêiner */
 .container {
-    clear: both;
-      display: flex;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-  }
+  clear: both;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 
 .container-block {
   display: block;
@@ -106,103 +106,104 @@ background-color: var(--dark-color);
   background-color: var(--dark-color);
   border-right: 100vw solid transparent;
   border-bottom: 2.2rem solid var(--secondary-color);
- border: 0;
+  border: 0;
 }
 
 /* Cookie de consentimento */
 .cookieConsentContainer {
-    z-index: 999;
-    width: 350px;
-    min-height: 20px;
-    box-sizing: border-box;
-    padding: 30px;
-    background: #232323;
-    overflow: hidden;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none;
+  z-index: 999;
+  width: 350px;
+  min-height: 20px;
+  box-sizing: border-box;
+  padding: 30px;
+  background: #232323;
+  overflow: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
 }
 
 .cookieConsentContainer .cookieTitle a {
-    font-family: 'OpenSans', Arial, sans-serif;
-    color: #fff;
-    font-size: 22px;
-    line-height: 20px;
-    display: block;
+  font-family: 'OpenSans', Arial, sans-serif;
+  color: #fff;
+  font-size: 22px;
+  line-height: 20px;
+  display: block;
 }
 
 .cookieConsentContainer .cookieDesc p {
-    margin: 0;
-    padding: 0;
-    font-family: 'OpenSans', Arial, sans-serif;
-    color: #fff;
-    font-size: 13px;
-    line-height: 20px;
-    display: block;
-    margin-top: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans', Arial, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+  display: block;
+  margin-top: 10px;
 }
 
 .cookieConsentContainer .cookieDesc a {
-    font-family: 'OpenSans', Arial, sans-serif;
-    color: var(--primary-color);
-    text-decoration: underline;
+  font-family: 'OpenSans', Arial, sans-serif;
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .cookieConsentContainer .cookieButton a {
-    display: inline-block;
-    font-family: 'OpenSans', Arial, sans-serif;
-    color: var(--primary-color);
-    font-size: 14px;
-    font-weight: 700;
-    margin-top: 14px;
-    background: #000;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    text-align: center;
-    transition: background .2s;
+  display: inline-block;
+  font-family: 'OpenSans', Arial, sans-serif;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 14px;
+  background: #000;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  text-align: center;
+  transition: background .2s;
 }
 
 .cookieConsentContainer .cookieButton a:hover {
-    cursor: pointer;
-    background: #3e9b67;
+  cursor: pointer;
+  background: #3e9b67;
 }
 
 @media (max-width: 980px) {
-    .cookieConsentContainer {
-        bottom: 0!important;
-        left: 0!important;
-        width: 100%!important;
-    }
+  .cookieConsentContainer {
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+  }
 }
 
 
 /* Estilos para o topo */
 .topper {
-    width: 100%;
-    float: left;
-    background-color: var(--primary-color);
-    clear: left;
-    height: 0.9rem;
-    padding: 0.45rem 0;
+  width: 100%;
+  float: left;
+  background-color: var(--primary-color);
+  clear: left;
+  height: 0.9rem;
+  padding: 0.45rem 0;
 }
 
 .topper a {
-    font-size: 15.3px;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--dark-color);
-    padding: 10px 0.8rem;
+  font-size: 15.3px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--dark-color);
+  padding: 10px 0.8rem;
 }
 
 /* Estilos para a logo */
 .logo {
-    width: 80px; /* Defina a largura desejada para a logo */
-    height: auto;
-    display: block;
-    float: left;
-    margin: 7px 0.8rem;
-    opacity: 1;
+  width: 80px;
+  /* Defina a largura desejada para a logo */
+  height: auto;
+  display: block;
+  float: left;
+  margin: 7px 0.8rem;
+  opacity: 1;
 }
 
 .logo.hide {
@@ -211,104 +212,111 @@ background-color: var(--dark-color);
 
 /* Estilos para a barra de navegação */
 .navbar {
-    background-color: var(--white-color);
-    overflow: hidden;
-    display: block; /* Use flexbox para alinhar os elementos na linha */
-    justify-content: space-between; /* Coloque a logo à esquerda e o ícone do menu à direita */
-    align-items: center; /* Alinhe verticalmente os elementos no centro */
-    padding: 0 0.9rem;
+  background-color: var(--white-color);
+  overflow: hidden;
+  display: block;
+  /* Use flexbox para alinhar os elementos na linha */
+  justify-content: space-between;
+  /* Coloque a logo à esquerda e o ícone do menu à direita */
+  align-items: center;
+  /* Alinhe verticalmente os elementos no centro */
+  padding: 0 0.9rem;
 }
 
 .navbar .logo,
-.navbar  {
-    align-self: center;
+.navbar {
+  align-self: center;
 }
 
 .navbar a {
-    float: right;
-    display: block;
-    color: var(--dark-color);
-    text-align: center;
-    font-weight: bold;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: right;
+  display: block;
+  color: var(--dark-color);
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .navbar a:hover {
-    color: var(--primary-color);
-    background-color: var(--dark-color);
+  color: var(--primary-color);
+  background-color: var(--dark-color);
 }
 
 /* Estilos para o menu de hambúrguer */
 .icon-bar {
-    display: none;
-    cursor: pointer;
-    float: right;
-    padding: 15px;
+  display: none;
+  cursor: pointer;
+  float: right;
+  padding: 15px;
 }
 
 .icon-bar div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--dark-color);
-    margin: 4px 0;
-    transition: 0.4s;
+  width: 25px;
+  height: 3px;
+  background-color: var(--dark-color);
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
 /* Estilos para o menu de navegação móvel */
 .navbar.responsive {
-    position: relative;
+  position: relative;
 }
 
 .navbar.responsive .icon-bar {
-    display: block;
+  display: block;
 }
 
 .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  float: none;
+  display: block;
+  text-align: left;
 }
 
 /* Estilos para o ícone do menu de navegação */
 .menu-icon {
-    display: none;
-    cursor: pointer;
-    float: right;
-    padding: 15px;
+  display: none;
+  cursor: pointer;
+  float: right;
+  padding: 15px;
 }
 
 .menu-icon .bar {
-    width: 25px;
-    height: 3px;
-    background-color: var(--dark-color);
-    margin: 4px 0;
-    transition: 0.4s;
+  width: 25px;
+  height: 3px;
+  background-color: var(--dark-color);
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
 /* Media query para ativar o menu de hambúrguer em telas menores */
 @media screen and (max-width: 768px) {
-    .icon-bar {
-        display: block;
-    }
+  .icon-bar {
+    display: block;
+  }
 
-    .menu-icon {
-        display: block;
-    }
-    .navbar a {
-        float: none;
-        text-align: left;
-        display: none;
-    }
-    .navbar.responsive {
-        display: block;
-    }
-    
-    /* Estilo para a logo quando o menu hambúrguer está ativo */
-    .change .logo {
-        opacity: 0; /* Faça a logo desaparecer */
-        pointer-events: none; /* Desative os eventos de clique na logo */
-    }
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar a {
+    float: none;
+    text-align: left;
+    display: none;
+  }
+
+  .navbar.responsive {
+    display: block;
+  }
+
+  /* Estilo para a logo quando o menu hambúrguer está ativo */
+  .change .logo {
+    opacity: 0;
+    /* Faça a logo desaparecer */
+    pointer-events: none;
+    /* Desative os eventos de clique na logo */
+  }
 }
 
 
@@ -330,45 +338,45 @@ background-color: var(--dark-color);
 
 /* Estilos para o fullcard com botão de doação */
 .fullcard img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    overflow: hidden;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 /* Estilo para as imagens quadradas */
 .square-image {
-    flex: 1;
-    transition: transform 0.1s ease;
-    max-width: 33.33333%;
-    height: auto;
+  flex: 1;
+  transition: transform 0.1s ease;
+  max-width: 33.33333%;
+  height: auto;
 }
 
 /* Efeito de desfoque quando a classe "blurred" está presente */
 .square-image.blurred {
-    filter: blur(5px);
+  filter: blur(5px);
 }
 
 /* Efeito de zoom quando a classe "zoomed" está presente */
 .square-image.zoomed {
-    z-index: 999;
-    border: 2px solid #fff;
-    transform: scale(1.1);
-    cursor: pointer;
+  z-index: 999;
+  border: 2px solid #fff;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 /* Estilo para área de apresentação */
 /* Estilo da div com duas colunas */
 .two-column-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 0 7px;
 }
 
 .hello {
-    text-align: left;
-    color: var(--dark-color);
+  text-align: left;
+  color: var(--dark-color);
 }
 
 .hello {
@@ -390,7 +398,8 @@ background-color: var(--dark-color);
   padding: 10px 20px 10px 20px;
   margin-bottom: 10px;
   text-decoration: none;
-    z-index: 1; /* Defina um valor de z-index para controlar a sobreposição */
+  z-index: 1;
+  /* Defina um valor de z-index para controlar a sobreposição */
 }
 
 .btn:hover {
@@ -400,37 +409,39 @@ background-color: var(--dark-color);
 
 /* Estilo das colunas */
 .column {
-    flex: 1;
-    padding: 10px 10px;
+  flex: 1;
+  padding: 10px 10px;
 }
 
 /* Estilo para o contêiner do vídeo */
 .image-container {
-    border-radius: 10px;
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Proporção de aspecto 16:9 (ajuste conforme necessário) */
-    overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* Proporção de aspecto 16:9 (ajuste conforme necessário) */
+  overflow: hidden;
 }
 
 .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border: 0;
   z-index: 1;
 }
 
 /* Layout para telas menores (usando uma media query) */
 @media (max-width: 768px) {
-    .two-column-container {
-      display: block;
-        flex-direction: column;
-    }
-    
+  .two-column-container {
+    display: block;
+    flex-direction: column;
+  }
+
 }
+
 .parceiros {
   margin: auto;
   text-align: center;
@@ -448,23 +459,29 @@ background-color: var(--dark-color);
 .conheca {
   background-color: var(--primary-color);
   padding: 10px 0;
-  display: block; /* Use flexbox para alinhar os elementos na linha */
-    justify-content: space-between; /* Coloque a logo à esquerda e o ícone do menu à direita */
-    align-items: center; /* Alinhe verticalmente os elementos no centro */
+  display: block;
+  /* Use flexbox para alinhar os elementos na linha */
+  justify-content: space-between;
+  /* Coloque a logo à esquerda e o ícone do menu à direita */
+  align-items: center;
+  /* Alinhe verticalmente os elementos no centro */
 }
 
 .circle-photo {
   padding: 0 2.9px;
-    width: 29.33333%; /* Ajuste o tamanho da sua foto */
-    height: auto; /* Ajuste o tamanho da sua foto */
-    overflow: hidden;
-    border-radius: 50%; /* Isso tornará a foto redonda */
+  width: 29.33333%;
+  /* Ajuste o tamanho da sua foto */
+  height: auto;
+  /* Ajuste o tamanho da sua foto */
+  overflow: hidden;
+  border-radius: 50%;
+  /* Isso tornará a foto redonda */
 }
 
 .spotted {
   color: #fff;
   font-weight: bold;
-text-shadow: 1.6px 1.6px 1px #333;
+  text-shadow: 1.6px 1.6px 1px #333;
 }
 
 .casos {
@@ -478,11 +495,11 @@ text-shadow: 1.6px 1.6px 1px #333;
 }
 
 .left {
-    float: left;
+  float: left;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 .footer {
@@ -511,38 +528,38 @@ text-shadow: 1.6px 1.6px 1px #333;
   color: #fff;
   padding: 10px 0;
   text-align: center;
-} 
+}
 
 
 /* Estilos para a visualização em fullscreen */
 #fullscreen {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    text-align: center;
-    z-index: 2;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  z-index: 2;
 }
 
 #fullscreen img {
-    max-width: 90%;
-    max-height: 90%;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
 }
