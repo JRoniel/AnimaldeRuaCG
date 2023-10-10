@@ -111,9 +111,9 @@ class Main {
     if (!this.getCookie("purecookieDismiss")) {
       document.body.innerHTML +=
         '<div id="cookieConsentContainer" class="cookieConsentContainer">' +
-        '<div class="cookieTitle"><a>' + cookieConfig.title + '</a></div>' +
+        '<div class="cookieTitle"><span>' + cookieConfig.title + '</span></div>' +
         '<div class="cookieDesc"><p>' + cookieConfig.description + " " + cookieConfig.link + '</p></div>' +
-        '<div class="cookieButton"><a onClick="mainInstance.purecookieDismiss();">' + cookieConfig.button + '</a></div>' +
+        '<div class="cookieButton"><a onClick="main.purecookieDismiss();">' + cookieConfig.button + '</a></div>' +
         '</div>';
       this.fadeIn("cookieConsentContainer");
     }

@@ -1,3 +1,6 @@
+/* Adicione este código ao seu arquivo CSS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 /* Configuração Root */
 :root {
   --white-color: #fff;
@@ -93,6 +96,7 @@ body {
   height: 0;
   padding: 0;
   border: 0;
+  z-index: 0;
   background-color: var(--primary-color);
   border-right: 100vw solid transparent;
   border-bottom: 2.2rem solid var(--dark-color);
@@ -100,6 +104,7 @@ body {
 }
 
 .separator-dark-inverso {
+  z-index: 0;
   width: 0;
   height: 0;
   padding: 0;
@@ -124,7 +129,7 @@ body {
   display: none;
 }
 
-.cookieConsentContainer .cookieTitle a {
+.cookieConsentContainer .cookieTitle span {
   font-family: 'OpenSans', Arial, sans-serif;
   color: #fff;
   font-size: 22px;
@@ -479,9 +484,7 @@ body {
 }
 
 .spotted {
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 1.6px 1.6px 1px #333;
+  color: var(--dark-color);
 }
 
 .casos {
