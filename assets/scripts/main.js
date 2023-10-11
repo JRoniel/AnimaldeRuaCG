@@ -117,7 +117,7 @@ class Main {
         '</div>';
       this.fadeIn("cookieConsentContainer");
     }
-  } 
+  }  
 
   purecookieDismiss() {
     this.setCookie("purecookieDismiss", "1", 7);
