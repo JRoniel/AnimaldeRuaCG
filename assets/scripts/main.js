@@ -7,28 +7,48 @@ let cookieConfig = {
   button: "Entendi 👍"
 };
 
+let permited_scroll = true;
+
 class Main {
   constructor() {
     this.initEvents();
     this.cookieConsent();
     this.correctYear();
+    this.changeScroll();
   }
 
   initEvents() {
     document.querySelector(".logo").addEventListener("click", () => {
-      window.location.href = domain;
+        window.location.href = domain;
     });
+
+    document.getElementById("whatsappLink").addEventListener("click", (e) => {
+        e.preventDefault();
+        document.getElementById("inputBox").style.display = "block";
+        this.changeScroll(false);
+    });
+}
+  
+  changeScroll(boolean = true) {
+  if (!boolean) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto"; // ou "scroll" se desejar a barra de rolagem sempre visível
   }
+}
 
   openFullscreen(element) {
     const imageSrc = element.src;
     document.getElementById('fullscreen-img').src = imageSrc;
     document.getElementById('fullscreen').style.display = 'block';
+    this.changeScroll(false);
   }
 
 
-  closeFullscreen() {
-    document.getElementById('fullscreen').style.display = 'none';
+  closeFullscreen(element) {
+    console.log(element);
+    document.getElementById(element).style.display = 'none';
+    this.changeScroll();
   }
 
 
@@ -49,7 +69,7 @@ class Main {
   }
 
   correctYear() {
-    document.getElementById("year").innerText = new Date().getFullYear();
+    document.querySelector("#year").innerText = new Date().getFullYear();
   }
 
   // Restante do seu código aqui...
@@ -117,7 +137,7 @@ class Main {
         '</div>';
       this.fadeIn("cookieConsentContainer");
     }
-  }  
+  }
 
   purecookieDismiss() {
     this.setCookie("purecookieDismiss", "1", 7);

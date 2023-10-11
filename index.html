@@ -16,7 +16,7 @@
   <meta property="og:title" content="Associação Animal de Rua Campina Grande, ONG na Paraíba">
   <meta property="og:description" content="A Associação Animal de Rua Campina Grande é uma ONG dedicada a fazer a diferença na vida dos animais abandonados e necessitados na cidade de Campina Grande e regiões vizinhas. Operando em colaboração com outros protetores e voluntários dedicados, nossa organização se esforça para fornecer atendimento e assistência vital para cães e gatos desamparados.">
   <meta property="og:image" content="https://raw.githubusercontent.com/JRoniel/AnimaldeRuaCG/master/icon.ico">
-  
+
   <!-- Precisa ser atualizado se o domínio for mudado -->
   <link rel="canonical" href="https://animalderuacg.vercel.app/">
   <meta property="og:url" content="https://animalderuacg.vercel.app/"> <!-- Precisa ser atualizado se o domínio for mudado -->
@@ -29,7 +29,7 @@
 
   <div id="fullscreen">
     <img id="fullscreen-img" src="" alt="Imagem em Tela Cheia">
-    <span class="close" onclick="main.closeFullscreen()">&times;</span>
+    <span class="close" onclick="main.closeFullscreen('fullscreen')">&times;</span>
   </div>
 
   <!-- Topper com contatos -->
@@ -51,10 +51,10 @@
     </div>
 
     <a href="/apoie.html">Apoie</a>
-    <a href="/voluntarios">Voluntariado</a>
-    <a href="/resgates">Resgates</a>
+    <a href="/voluntarios.html">Voluntariado</a>
+    <a href="/resgates.html">Resgates</a>
     <a href="#">Formulários</a>
-    <a href="#">Contato</a>
+    <a href="#" id="whatsappLink">Contato</a>
     <a href="/adote">Adote</a>
   </div>
 
@@ -120,7 +120,7 @@
     <div class="two-columns-container container">
       <div class="column left bg-dark">
         <p class="text">Caso x antes/depois</p>
-        <small class="t-primary">clique para abrir</small>
+        <small class="t-primary">clique para abrir</small><br>
         <img src="" alt="foto antes" loading="lazy">
         <img src="" alt="foto depois" loading="lazy">
 
@@ -130,7 +130,7 @@
 
       <div class="column right bg-dark">
         <p class="text">Caso bruce antes/depois</p>
-        <small class="t-primary">clique para abrir</small>
+        <small class="t-primary">clique para abrir</small><br>
         <img class="caso-photo" src="./assets/images/bruce-before.png" alt="foto antes" loading="lazy" onclick="main.openFullscreen(this)">
         <img class="caso-photo" src="./assets/images/bruce-after.png" alt="foto depois" loading="lazy" onclick="main.openFullscreen(this)">
         <p class="text">Texto descrevendo o caso de bruce, blablabla ninguém vai le isso aqui mas preciso colcoar texto para be a formatação ee o espaço ideal entre colunas</p>
@@ -170,7 +170,7 @@
   </footer>
 
   <div class="hotbar">
-    <p>Por Rodolfo Tolke & John Roniel</p>
+    <p class="text">Por Rodolfo Tolke & John Roniel ©</p>
   </div>
 
   <!-- Incluir o arquivo JavaScript -->
