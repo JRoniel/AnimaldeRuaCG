@@ -145,4 +145,12 @@ class Main {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Simular o carregamento das imagens
+  setTimeout(function () {
+      document.body.classList.add("loading-done");
+  }, 2000);
+});
+
+
 const main = new Main();

@@ -12,17 +12,20 @@
 - [x] FullCard com botão de ação (doar) adicionado
 - [x] Square imagens com ação 
 - [x] Sessão de apresentação adicionada
-- [ ] Footer
+- [ ] Sessão de parceiros
+- [x] Footer
 
 `Pagina 404`:
-- [x] Pagina concluída
-- [x] Adicionar navbar atualizada
+- [ ] Pagina concluída
+- [ ] Adicionar navbar atualizada
 
 `Pagina política de privacidade `:
 - [x] Página concluída
 - [x] Adicionar navbar atualizada
 
 `Infraestrutura`:
+- [x] Animação de loading adicionada
+- [x] Adicionado Lazy loading as imagens
 - [ ] Otimização de dados em cache
 - [x] Política de privacidade 
 - [ ] Urls amigáveis

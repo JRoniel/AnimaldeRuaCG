@@ -1,5 +1,3 @@
-/* Adicione este código ao seu arquivo CSS */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 /* Configuração Root */
 :root {
@@ -10,27 +8,16 @@
   --secondary-color: #fff;
 }
 
+/* Adicione este código ao seu arquivo CSS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+/* Adicionando bootstrap */
+@import url('../styles/bs.css');
+
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--primary-color);
-}
-
-.bg-primary {
-  background-color: var(--primary-color);
-}
-
-.bg-secondary {
-  background-color: var(--secondary-color);
-}
-
-.bg-dark {
-  background-color: var(--dark-color);
-}
-
-.text-center {
-  text-align: center;
 }
 
 /* Estilo da div de contêiner */
@@ -42,33 +29,35 @@ body {
   margin: 0;
 }
 
-.container-block {
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  border: 6px solid var(--primary-color);
+  border-top: 6px solid #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.content {
+  display: none;
+}
+
+.loading-done .content {
   display: block;
-  clear: both;
 }
 
-.title {
-  font-size: 150%;
-  padding: 5px 0 10px 0;
-  font-weight: bold;
-}
-
-.text {
-  font-size: 110%;
-  padding: 0 1rem;
-}
-
-.t-white {
-  color: #fff;
-}
-
-.t-primary {
-  color: var(--primary-color);
-}
-
-.t-dark {
-  color: #333;
-}
 
 .separator-primary {
   width: 0;
@@ -76,7 +65,7 @@ body {
   padding: 0;
   border: 0;
   background-color: var(--secondary-color);
-  border-right: 100vw solid transparent;
+  border-right: 98vw solid transparent;
   border-bottom: 2.2rem solid var(--primary-color);
 }
 
@@ -86,7 +75,7 @@ body {
   padding: 0;
   border: 0;
   background-color: var(--primary-color);
-  border-right: 100vw solid transparent;
+  border-right: 98vw solid transparent;
   border-bottom: 2.2rem solid var(--secondary-color);
 
 }
@@ -98,7 +87,7 @@ body {
   border: 0;
   z-index: 0;
   background-color: var(--primary-color);
-  border-right: 100vw solid transparent;
+  border-right: 98vw solid transparent;
   border-bottom: 2.2rem solid var(--dark-color);
 
 }
@@ -109,7 +98,7 @@ body {
   height: 0;
   padding: 0;
   background-color: var(--dark-color);
-  border-right: 100vw solid transparent;
+  border-right: 98vw solid transparent;
   border-bottom: 2.2rem solid var(--secondary-color);
   border: 0;
 }
@@ -497,14 +486,6 @@ body {
   width: 18vw;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
 .footer {
   padding: 10px 0 0 0;
   bottom: 0;
@@ -585,7 +566,4 @@ body {
 
 .inputform {
   text-align: center;
-}
-
-n;
 }
